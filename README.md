@@ -5,6 +5,7 @@
   - [VisioPro2024Retail](https://raw.githubusercontent.com/BsNgChiThanh/Office2024Visio/IMP/VisioPro2024Retail.exe)
   - [VisioStd2024Retail](https://raw.githubusercontent.com/BsNgChiThanh/Office2024Visio/IMP/VisioStd2024Retail.exe)
 
+Có nhiều cách kích hoạt, xong tôi chỉ ra 2 cách kích hoạt điển hình nhất:
 ## CÁCH 1:
 - Dùng MAS Tools
 - https://github.com/BsNgChiThanh/MAS-TOOL
