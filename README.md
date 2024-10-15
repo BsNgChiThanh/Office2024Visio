@@ -6,12 +6,15 @@
   - [VisioStd2024Retail](https://raw.githubusercontent.com/BsNgChiThanh/Office2024Visio/IMP/VisioStd2024Retail.exe)
 
 Có nhiều cách kích hoạt, xong tôi chỉ ra 2 cách kích hoạt điển hình nhất:
+
 ## CÁCH 1:
 - [Dùng MAS Tools](https://github.com/BsNgChiThanh/MAS-TOOL)
 - Các bạn chạy **PowerShell** bằng quyền **Run as Administrator**, rồi dán câu lệnh sau đâu vào:
   ```php
   irm https://raw.githubusercontent.com/BsNgChiThanh/MAS-TOOL/IMP/MAS.ps1 | iex
   ```
+- Làm theo chỉ dẫn của cửa sổ hiện lên.
+- Done!
 
 ## CÁCH 2
 - ĐẦU TIÊN KÍCH HOẠT BẰNG KEY KMS 180 NGÀY:
