@@ -20,12 +20,21 @@ Có nhiều cách kích hoạt, xong tôi chỉ ra 2 cách kích hoạt điển 
 - ĐẦU TIÊN KÍCH HOẠT BẰNG KEY KMS 180 NGÀY:
   - Chạy **cmd** bằng quyền **Run as Administrator** rồi dán đoạn lệnh này vào, nhấn enter:
   ```php
-  for %a in (4,5,6) do (if exist "%ProgramFiles%\Microsoft Office\Office1%a\ospp.vbs" (cd /d "%ProgramFiles%\Microsoft Office\Office1%a")
-  if exist "%ProgramFiles% (x86)\Microsoft Office\Office1%a\ospp.vbs" (cd /d "%ProgramFiles% (x86)\Microsoft Office\Office1%a"))
-  (cscript //nologo ospp.vbs /setprt:1688 >nul || goto wshdisabled)&cscript //nologo ospp.vbs /inslic:"..\root\Licenses16\pkeyconfig-office.xrm-ms" >nul
-  (for /f %%x in ('dir /b ..\root\Licenses16\client-issuance*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
-  (for /f %%x in ('dir /b ..\root\Licenses16\visioprovl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
-  (for /f %%x in ('dir /b ..\root\Licenses16\visiopro2024vl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
+  set v=16
+  if exist "%ProgramFiles%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office%v%"
+  if exist "%ProgramFiles(x86)%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office%v%"
+
+  cscript ospp.vbs /inslic:"..\root\Licenses16\pkeyconfig-office.xrm-ms"
+  cscript ospp.vbs /inslic:"..\root\Licenses16\client-issuance*.xrm-ms"
+  cscript ospp.vbs /inslic:"..\root\Licenses16\visioprovl_kms*.xrm-ms"
+  cscript ospp.vbs /inslic:"..\root\Licenses16\VisioPro2024VL_KMS_Client_AE-ppd
+  cscript ospp.vbs /inslic:"..\root\Licenses16\VisioPro2024VL_KMS_Client_AE-ul
+  cscript ospp.vbs /inslic:"..\root\Licenses16\VisioPro2024VL_KMS_Client_AE-ul-oob
+  cscript ospp.vbs /inslic:"..\root\Licenses16\VisioPro2024VL_MAK_AE-pl
+  cscript ospp.vbs /inslic:"..\root\Licenses16\VisioPro2024VL_MAK_AE-ppd
+  cscript ospp.vbs /inslic:"..\root\Licenses16\VisioPro2024VL_MAK_AE-ul-oob
+  cscript ospp.vbs /inslic:"..\root\Licenses16\VisioPro2024VL_MAK_AE-ul-phn 
+   
   cscript ospp.vbs /setprt:1688
   cscript ospp.vbs /inpkey:YW66X-NH62M-G6YFP-B7KCT-WXGKQ
   cscript ospp.vbs /inpkey:HGRBX-N68QF-6DY8J-CGX4W-XW7KP
